@@ -12,6 +12,9 @@ function plus() {
     else if (A==2) {
         alert('Days of this month are 28');
     }
+    else {
+        console.log('Error');
+    }
 }
 
 
