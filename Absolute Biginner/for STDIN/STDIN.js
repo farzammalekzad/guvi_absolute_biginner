@@ -97,4 +97,30 @@ inp.on('close', () => {
   let B = stringArray[2];
     console.log(stringArray[2]);
 });
+-------------------
+
+const readline = require("readline");
+
+const inp = readline.createInterface({
+    input: process.stdin
+});
+let lines = [];
+inp.on("line", (data) => {
+
+    lines.push(data);
+});
+inp.on('close', () => {
+
+  let B = lines[0].split("");
+
+   let C = lines[1].match(/\d/g);
+    let D = C.length;
+    for(let i=1; i<=B[2]; i++) {
+        C.unshift(C[D-1]);
+        C.pop();
+
+    }
+    console.log(C.toString().replace(/,/g , " "));
+});
  */
+
