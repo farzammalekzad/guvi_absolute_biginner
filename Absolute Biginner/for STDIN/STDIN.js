@@ -92,7 +92,7 @@ inp.on('close', () => {
 
 
     console.log(lines[0]);
-    let stringArray = lines[1].split(/(\s+)/);
+    let stringArray = lines[1].split(/\s+/);
   let A = stringArray[0];
   let B = stringArray[2];
     console.log(stringArray[2]);
